@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h2>Admin Panel - My E-Commerce Store</h2>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart</a>
+    <a href="admin.html" class="active">Admin</a>
+    <a href="login.html">Logout</a>
+</nav>
+
+<div class="container">
+    <div class="admin-section">
+        <h3>Add New Product</h3>
+        <form>
+            <label>Product Name</label>
+            <input type="text" placeholder="Enter product name" required>
+
+            <label>Price</label>
+            <input type="number" placeholder="Enter price" required>
+
+            <label>Image URL</label>
+            <input type="text" placeholder="Enter image URL" required>
+
+            <button type="submit" class="btn-3d">Add Product</button>
+        </form>
+    </div>
+    <div class="admin-section">
+        <h3>Products List</h3>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <td>Mobile Phone</td>
+                <td>₹15,000</td>
+                <td><img src="PHONE.jpeg"></td>
+                <td><button class="btn-3d">Edit</button></td>
+                <td><button class="btn-3d delete-btn">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>₹45,000</td>
+                <td><img src="vivobook-main-1.jpeg"></td>
+                <td><button class="btn-3d">Edit</button></td>
+                <td><button class="btn-3d delete-btn">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Headphones</td>
+                <td>₹2,000</td>
+                <td><img src="prezentare0001.jpeg"></td>
+                <td><button class="btn-3d">Edit</button></td>
+                <td><button class="btn-3d delete-btn">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="admin-section">
+        <h3>Orders</h3>
+        <table>
+            <tr>
+                <th>Order ID</th>
+                <th>User</th>
+                <th>Items</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Yun Ah</td>
+                <td>Mobile Phone, Laptop</td>
+                <td>₹60,000</td>
+                <td>Pending</td>
+                <td><button class="btn-3d">Mark Delivered</button></td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>John Doe</td>
+                <td>Headphones</td>
+                <td>₹2,000</td>
+                <td>Pending</td>
+                <td><button class="btn-3d">Mark Delivered</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="admin-section">
+        <h3>Users</h3>
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Yun Ah</td>
+                <td>yunah@example.com</td>
+                <td>Active</td>
+                <td><button class="btn-3d delete-btn">Deactivate</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>Active</td>
+                <td><button class="btn-3d delete-btn">Deactivate</button></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 My E-Commerce Store
+</footer>
+
+</body>
+</html>
